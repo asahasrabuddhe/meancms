@@ -1,0 +1,25 @@
+{
+  "name": "meancms",
+  "version": "0.0.1",
+  "description": "A CMS written in Mean Stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreatDharmatma/meancms.git"
+  },
+  "author": "Ajitem Sahasrabuddhe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreatDharmatma/meancms/issues"
+  },
+  "homepage": "https://github.com/GreatDharmatma/meancms#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "foundation-sites": "^6.3.0",
+    "mongoose": "^4.7.5",
+    "pug": "^2.0.0-beta6"
+  }
+}
