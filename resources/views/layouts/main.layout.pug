@@ -1,0 +1,17 @@
+doctype
+html
+  head
+    title #{title} - My Site
+    link(rel='stylesheet', href='/public/assets/css/global.style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    script(src='/public/foundation.min.js')
+  body
+    header.top-bar
+      h1 My Site
+    .row.align-middle
+      .columns
+        block content
+      .columns
+        block sidebar
+    footer.footer
+      h4 Running on node with Express, Pug and SCSS
