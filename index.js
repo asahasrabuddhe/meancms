@@ -12,7 +12,7 @@ app.use(
 	sassMiddleware({
 		src: path.join(__dirname, '/resources/sass/'),
 		dest: path.join(__dirname, '/public/assets/css'),
-		includePaths: [path.join(__dirname, '/node_modules/foundation-sites/scss/')],
+		includePaths: [path.join(__dirname, '/node_modules/bootstrap/scss/')],
 		prefix: '/public/assets/css/',
 		debug: true,
 		outputStyle: 'compressed',
@@ -20,7 +20,7 @@ app.use(
 )
 
 app.use('/public', express.static(__dirname + '/public'))
-app.use('/public', express.static(__dirname + '/node_modules/foundation-sites/dist/js'))
+app.use('/public', express.static(__dirname + '/node_modules/bootstrap/dist/js'))
 
 app.get('/', function (req, res) {
 	res.render('index',

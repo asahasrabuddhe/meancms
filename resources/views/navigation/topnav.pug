@@ -1,0 +1,12 @@
+include ../includes/functions.pug
+nav.navbar.navbar-dark.bg-inverse
+	div.container
+		a.navbar-brand(href="#"): img.d-inline-block.img-responsive(src='/public/assets/images/illumey-logo-1.png' style="width: 13em")
+		button.navbar-toggler.hidden-sm-up.collapsed.float-xs-right(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation")
+		#navbar-header.navbar-toggleable-xs.collapse(aria-expanded="false")
+			ul.nav.navbar-nav.float-sm-right
+				+menuitem('About')
+				+menuitem('Contact')
+				+menuitem('Terms and Conditions')
+				+menuitem('Signup')
+				+menuitem('Login')
